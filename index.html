@@ -1,0 +1,50 @@
+<body>
+  <form class="create-user-form">
+  <label>
+    Имя
+    <input type="text" name="userName" placeholder="Введите ваше имя" />
+  </label>
+  <label>
+    Пароль
+    <input type="password" name="password" placeholder="Придумайте Пароль" />
+  </label>
+  <button type="submit">
+    Подтвердить
+  </button>
+</form>
+  
+<script>
+let str = `
+<form class="create-user-form">
+  <label>
+    Имя
+    <input type="text" name="userName" placeholder="Введите ваше имя" />
+  </label>
+  <label>
+    Пароль
+    <input type="password" name="password" placeholder="Придумайте Пароль" />
+  </label>
+  <button type="submit">
+    Подтвердить
+  </button>`;
+ document.body.innerHTML += str;
+</script>
+  
+<script>
+ form = document.createElement("form");
+label1 = document.createElement("label");
+input1 = document.createElement("input");
+label2 = document.createElement("label");
+input2 = document.createElement("input");
+button = document.createElement("button");
+label1.textContent = " Имя ";
+input1.placeholder = "Введите ваше имя";
+label2.textContent = " Пароль ";
+input2.placeholder = "Придумайте Пароль";
+button.textContent = " Подтвердить ";
+label1.append(input1);
+label2.append(input2);
+form.append(label1, " ", label2, " ", button);
+document.body.append(form);
+</script>
+</body>
